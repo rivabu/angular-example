@@ -86,6 +86,8 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-karma');
 	grunt.loadNpmTasks('grunt-protractor-runner');
 	grunt.loadNpmTasks('grunt-run');
+	grunt.loadNpmTasks('grunt-release');
+
 
 	grunt.registerTask('serve', ['karma:continuous:start', 'run:mock_server', 'connect:livereload', 'watch:karma']);
 

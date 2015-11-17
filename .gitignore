@@ -5,3 +5,4 @@
 /.project
 /.externalToolBuilders/org.eclipse.wst.jsdt.core.javascriptValidator.launch
 /.tern-project
+/test-results/
