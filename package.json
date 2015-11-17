@@ -1,7 +1,7 @@
 {
   "name": "angular-test-seed",
   "description": "Project to demostrate setting up Protractor, Grunt, Karma, and Angular",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "dependencies": {
     "grunt": "~0.4.2"
   },
@@ -19,7 +19,9 @@
     "karma-phantomjs-launcher": "^0.1.4",
     "grunt-run": "^0.2.2",
     "karma-coverage": "^0.2.4",
-    "karma-jshint-preprocessor": "0.0.3"
+    "karma-jshint-preprocessor": "0.0.3",
+    "grunt": "~0.4.5",
+    "grunt-release": "~0.13.0"
   },
   "scripts": {
     "update-webdriver": "webdriver-manager update",
