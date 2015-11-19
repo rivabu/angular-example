@@ -1,0 +1,41 @@
+{
+    "globals": {
+        "angular": true
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "mocha": true,
+        "jasmine": true,
+        "protractor": true,
+        "mongo": true
+    },
+    "rules": {        
+        "no-unexpected-multiline": 2,
+        //Best practice
+        "block-scoped-var" : 2,
+        "curly": 1,
+        "default-case": 2,
+        "eqeqeq": [2, "smart"],
+        "guard-for-in": 2,
+        "no-else-return": 1,
+        "no-eq-null": 2,
+        "no-floating-decimal": 2,
+        "no-invalid-this": 2,
+        "no-lone-blocks": 1,
+        "no-loop-func": 2,
+        "no-multi-spaces": 1,
+        "no-sequences": 2,
+        "no-unused-expressions": 2,
+        "vars-on-top": 1,
+        //Node specific
+        "callback-return": 2,
+        "global-require": 2,
+        "no-sync": 2
+    },
+    "extends": [
+        "eslint:recommended"
+        //Disable angular checking for now
+        //"angular"
+        ]
+}
