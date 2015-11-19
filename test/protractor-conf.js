@@ -19,7 +19,10 @@ exports.config = {
   // or configure a single browser
   
   capabilities: {
-    'browserName': 'chrome'
+      //    'browserName': 'chrome'
+    'browserName': 'phantomjs',
+    'phantomjs.binary.path': require('phantomjs').path
+
   },
   
 
@@ -29,3 +32,5 @@ exports.config = {
   // testing framework, jasmine is the default
   framework: 'jasmine'
 };
+
+
