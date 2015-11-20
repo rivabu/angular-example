@@ -52,7 +52,7 @@ module.exports = function(config){
     reporters : ['progress', 'coverage', 'dots', 'junit'],
       junitReporter : {
         outputDir: '', // results will be saved as $outputDir/$browserName.xml
-        outputFile: '/test-result.xml', // if included, results will be saved as $outputDir/$browserName/$outputFile
+        outputFile: '/junit.xml', // if included, results will be saved as $outputDir/$browserName/$outputFile
         suite: '', // suite will become the package name attribute in xml testsuite element
         useBrowserName: false // add browser name to report and classes names
     },
@@ -73,14 +73,11 @@ module.exports = function(config){
     ngHtml2JsPreprocessor: {
       stripPrefix: 'app/'
     },
-    coverageReporter: {
-      // type of file to output, use text to output to console
-      type : 'text',
-      // directory where coverage results are saved
-      dir: 'test-results/coverage/' 
-      // if type is text or text-summary, you can set the file name
-      // file: 'coverage.txt' 
-    }
+    coverageReporter : {
+    type: 'cobertura',
+    dir: 'test-results/',
+    file: 'coverage.xml'
+  }
   //,
   //  junitReporter: {
   //    outputFile: 'test-results/junit-results.xml'

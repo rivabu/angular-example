@@ -46,7 +46,7 @@ describe('Controllers ::', function() {
       it('should redirect to home directory when blank', function() {
         location.path('');
         scope.$apply();
-        expect(location.path()).toBe('@@@');
+        expect(location.path()).toBe('/');
       });
     });
 
