@@ -19,7 +19,7 @@ exports.config = {
   // or configure a single browser
   
   capabilities: {
-      //    'browserName': 'chrome'
+    //      'browserName': 'chrome'
     'browserName': 'phantomjs',
     'phantomjs.binary.path': require('phantomjs').path
 
