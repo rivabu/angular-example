@@ -47,7 +47,15 @@ module.exports = function(config){
       'app/js/app.js': ['jshint', 'coverage']
     },
 
-    reporters: ['progress', 'coverage'],
+    //reporters: ['progress', 'coverage', 'dots', 'junit'],
+      //singleRun = true,
+    reporters : ['progress', 'coverage', 'dots', 'junit'],
+      junitReporter : {
+        outputDir: '', // results will be saved as $outputDir/$browserName.xml
+        outputFile: '/test-result.xml', // if included, results will be saved as $outputDir/$browserName/$outputFile
+        suite: '', // suite will become the package name attribute in xml testsuite element
+        useBrowserName: false // add browser name to report and classes names
+    },
 
     // list of karma plugins
     plugins : [
@@ -57,7 +65,8 @@ module.exports = function(config){
       'karma-firefox-launcher',
       'karma-jasmine',
       'karma-ng-html2js-preprocessor',
-      'karma-phantomjs-launcher'
+      'karma-phantomjs-launcher',
+      'karma-junit-reporter'
     ],
 
     // plugin settings
@@ -71,8 +80,9 @@ module.exports = function(config){
       dir: 'test-results/coverage/' 
       // if type is text or text-summary, you can set the file name
       // file: 'coverage.txt' 
-    },
-    junitReporter: {
-      outputFile: 'test-results/junit-results.xml'
     }
+  //,
+  //  junitReporter: {
+  //    outputFile: 'test-results/junit-results.xml'
+  //  }
 })}
