@@ -1,4 +1,6 @@
 /node_modules/
+/node_modules_cache/
+/test-results.xml
 /target/
 /.settings
 /.classpath

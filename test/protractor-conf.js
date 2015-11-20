@@ -32,5 +32,3 @@ exports.config = {
   // testing framework, jasmine is the default
   framework: 'jasmine'
 };
-
-
