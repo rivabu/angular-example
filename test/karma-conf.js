@@ -44,6 +44,7 @@ module.exports = function(config){
       // test coverage
       'app/js/controllers/*.js': ['jshint', 'coverage'],
       'app/js/directives/*.js': ['jshint', 'coverage'],
+      'app/js/services/*.js': ['jshint', 'coverage'],
       'app/js/app.js': ['jshint', 'coverage']
     },
 
