@@ -8,3 +8,6 @@
 /.externalToolBuilders/org.eclipse.wst.jsdt.core.javascriptValidator.launch
 /.tern-project
 /test-results/
+/junit.xml
+/test-result.xml
+/.externalToolBuilders/
